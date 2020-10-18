@@ -1,0 +1,402 @@
+/* General */
+
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+}
+
+/* UIKit Override */
+.uk-h1 {
+  font-size: 5.625rem;
+}
+
+.uk-h2 {
+  font-size: 4.625rem;
+}
+
+.uk-h3 {
+  font-size: 2.625rem;
+}
+
+@media (max-width: 640px) {
+  .uk-h1 {
+    font-size: 4.625rem;
+  }
+  
+  .uk-h2 {
+    font-size: 2.625rem;
+  }
+  
+  .uk-h3 {
+    font-size: 1.625rem;
+  }
+}
+
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h6,
+.uk-heading-2xlarge,
+.uk-heading-large,
+.uk-heading-medium,
+.uk-heading-small,
+.uk-heading-xlarge,
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Work Sans", serif;
+}
+
+.uk-h4,
+h4 {
+  font-family: "Manrope", serif;
+}
+
+/* Firefox fix */
+.uk-navbar-item .logo {
+  height: 65px;
+}
+
+.uk-navbar-dropdown-nav,
+.uk-navbar-item,
+.uk-navbar-nav>li>a,
+.uk-navbar-toggle,
+.uk-nav-default,
+.uk-button,
+.uk-h5,
+h5,
+.uk-subnav>*> :first-child {
+  font-family: "Manrope", serif;
+  text-transform: uppercase;
+}
+
+.uk-navbar-nav>li:hover>a,
+.uk-navbar-nav>li>a.uk-open,
+.uk-navbar-nav>li>a:focus,
+.uk-navbar-dropdown-nav>li>a:focus,
+.uk-navbar-dropdown-nav>li>a:hover,
+.uk-subnav>*>a:focus,
+.uk-subnav>*>a:hover,
+.uk-link-muted a:hover,
+.uk-link-toggle:focus .uk-link-muted,
+.uk-link-toggle:hover .uk-link-muted,
+a:hover,
+a.uk-link-muted:hover,
+.uk-navbar-dropdown-nav .uk-accordion-title:hover {
+  color: var(--main);
+}
+
+.uk-navbar-nav>li>a.active {
+  color: var(--main);
+}
+
+.uk-button-text::before {
+  border-bottom: 2px solid var(--main) !important;
+}
+
+/* Sticky Navbar BG */
+.uk-navbar-container.uk-active {
+  background: rgba(240, 240, 247, 0.8);
+  backdrop-filter: saturate(250%) blur(10px);
+  -webkit-backdrop-filter: saturate(250%) blur(10px);
+}
+
+@media (max-width: 959px) {
+  .uk-navbar-container {
+    background: rgba(240, 240, 247) !important;
+  }
+}
+
+.uk-thumbnav img {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.uk-badge {
+  padding: 5px 10px;
+}
+
+.uk-badge i {
+  padding-right: 3px;
+}
+
+/* Modal Fixes */
+@media screen and (max-width: 640px) {
+  .uk-modal-dialog {
+    min-height: -webkit-fill-available;
+  }
+
+  .uk-modal-dialog [uk-height-viewport] {
+    min-height: calc(50vh) !important;
+  }
+
+  .uk-modal-full::before {
+    content: "";
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+/* Fix Submenu Mobile */
+.uk-navbar-dropdown-nav .uk-accordion-title,
+.uk-navbar-dropdown-nav .uk-accordion-content a {
+  color: #999;
+  font-size: 0.875rem;
+  padding: 5px 0;
+}
+
+.uk-navbar-dropdown-nav .uk-accordion-content {
+  border-left: 1px solid #e5e5e5;
+}
+
+.uk-navbar-dropdown-nav .uk-accordion-content a {
+  padding-left: 20px;
+}
+
+.uk-navbar-dropdown-nav .uk-accordion-content a:hover {
+  color: var(--main);
+}
+
+.uk-navbar-dropdown-dropbar .uk-search-input {
+  height: 60px;
+}
+
+.uk-navbar .uk-navbar-toggle {
+  transition: all 0.2s ease;
+}
+
+.uk-navbar .uk-navbar-toggle.uk-open {
+  opacity: 0;
+}
+
+/* Select Icon Fix */
+.uk-form-icon~.uk-select {
+  padding-left: 40px !important;
+}
+
+/* Input Placeholder */
+.inputPlaceholder {
+  position: relative;
+}
+
+.inputPlaceholder+.inputPlaceholder {
+  margin-top: 20px;
+}
+
+.inputPlaceholder input:focus {
+  border-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.inputPlaceholder input~label,
+.inputPlaceholder textarea~label {
+  pointer-events: none;
+  position: absolute;
+  top: -13px;
+  left: 11px;
+  color: #000000;
+  background-color: #fff;
+  padding: 0 5px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.inputPlaceholder input:placeholder-shown~label,
+.inputPlaceholder textarea:placeholder-shown~label {
+  position: absolute;
+  top: 9px;
+  font-weight: initial;
+  color: #00000062;
+}
+
+.inputPlaceholder input:placeholder-shown.uk-form-large~label,
+.inputPlaceholder textarea:placeholder-shown.uk-form-large~label {
+  font-size: 1.25rem;
+  top: 13px;
+  left: 13px;
+}
+
+.inputPlaceholder textarea.uk-form-large {
+  padding-top: 12px;
+}
+
+/* Custom */
+
+.services {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+.services>div:first-child {
+  display: grid;
+}
+
+.services video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bigHoverBox {
+  height: 400px;
+  width: -webkit-fill-available;
+}
+
+.bigHoverBox img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 80px)
+}
+
+@media (min-width: 640px) {
+  .hero .uk-h1 {
+    font-size: 6.625rem;
+  }
+}
+
+.hero video {
+  object-fit: cover;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  opacity: 1;
+  height: 100%;
+}
+
+.hero video.videoFixEdge {
+  width: auto !important;
+}
+
+.hero h1 {
+  line-height: 6.25rem;
+}
+
+.socialMedia {
+  font-size: 1rem
+}
+
+.hoverBox {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  padding: 30px 30px;
+  right: 0;
+}
+
+.caseCompany {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.standards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.standards .divider {
+  border-left: 1px solid black;
+  margin-left: 25px;
+}
+
+.standards .item {
+  max-width: 300px;
+  padding-bottom: 30px;
+}
+
+.standards .item:nth-child(odd) {
+  margin-left: auto;
+  padding-right: 25px;
+  border-right: 1px solid black;
+  text-align: right;
+}
+
+.standards .item:nth-child(even) {
+  padding-left: 25px;
+}
+
+.standards .item:last-child {
+  padding-bottom: 0;
+}
+
+.subtitle {
+  font-size: 22px;
+}
+@media (max-width: 640px) {
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+.loopImages,
+.edgeFix {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cf4FadeInOut {
+  0% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.loopImages img {
+  position: absolute;
+  animation-name: cf4FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  animation-direction: alternate;
+}
+
+.loopImages img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.loopImages img:nth-of-type(2) {
+  animation-delay: 3s;
+}
+
+.caseHover {
+  background: rgb(255, 255, 255, 0.7);
+  backdrop-filter: saturate(250%) blur(10px);
+}
+
+.caseVideo {
+  height: 700px;
+}
+
+.omossImg {
+  width: auto;
+  height: 500px;
+}
+
+@media (min-width: 959px) {
+  .omossImg {
+    width: 500px;
+    height: 500px;
+  }
+}
