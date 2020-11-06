@@ -2,11 +2,6 @@ import Vue from "vue";
 import Router from "vue-router";
 
 import homePage from "../pages/home";
-import servicePage from "../pages/services";
-import casePage from "../pages/case";
-import casesPage from "../pages/cases";
-import aboutPage from "../pages/about";
-import contactPage from "../pages/contact";
 
 Vue.use(Router);
 
@@ -17,36 +12,6 @@ export default new Router({
       path: "/",
       name: "Home",
       component: homePage,
-    },
-    {
-      path: "/tjanster",
-      name: "Service",
-      component: servicePage,
-    },
-    {
-      path: "/tjanster/:sn",
-      name: "Service",
-      component: servicePage,
-    },
-    {
-      path: "/cases",
-      name: "Cases",
-      component: casesPage,
-    },
-    {
-      path: "/cases/:sn",
-      name: "Cases",
-      component: casePage,
-    },
-    {
-      path: "/omoss",
-      name: "About",
-      component: aboutPage,
-    },
-    {
-      path: "/kontaktaoss",
-      name: "Contact",
-      component: contactPage,
     },
     {
       path: "*",

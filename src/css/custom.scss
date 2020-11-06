@@ -188,37 +188,36 @@ a.uk-link-muted:hover,
   position: relative;
 }
 
-.inputPlaceholder+.inputPlaceholder {
+.inputPlaceholder + .inputPlaceholder {
   margin-top: 20px;
 }
 
-.inputPlaceholder input:focus {
-  border-color: rgba(0, 0, 0, 0.5) !important;
+.inputPlaceholder input:focus,
+.inputPlaceholder textarea:focus {
+  border-color: rgba(255, 255, 255, 0.5) !important;
 }
 
-.inputPlaceholder input~label,
-.inputPlaceholder textarea~label {
+.inputPlaceholder input ~ label,
+.inputPlaceholder textarea ~ label {
   pointer-events: none;
   position: absolute;
   top: -13px;
   left: 11px;
-  color: #000000;
-  background-color: #fff;
-  padding: 0 5px;
+  color: var(--main);
   font-weight: bold;
   transition: all 0.2s ease;
 }
 
-.inputPlaceholder input:placeholder-shown~label,
-.inputPlaceholder textarea:placeholder-shown~label {
+.inputPlaceholder input:placeholder-shown ~ label,
+.inputPlaceholder textarea:placeholder-shown ~ label {
   position: absolute;
   top: 9px;
   font-weight: initial;
   color: #00000062;
 }
 
-.inputPlaceholder input:placeholder-shown.uk-form-large~label,
-.inputPlaceholder textarea:placeholder-shown.uk-form-large~label {
+.inputPlaceholder input:placeholder-shown.uk-form-large ~ label,
+.inputPlaceholder textarea:placeholder-shown.uk-form-large ~ label {
   font-size: 1.25rem;
   top: 13px;
   left: 13px;
@@ -228,45 +227,18 @@ a.uk-link-muted:hover,
   padding-top: 12px;
 }
 
-/* Custom */
-
-.services {
-  height: 250px;
-  width: 100%;
-  display: grid;
-  align-content: center;
-}
-
-.services>div:first-child {
-  display: grid;
-}
-
-.services video {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.bigHoverBox {
-  height: 400px;
-  width: -webkit-fill-available;
-}
-
-.bigHoverBox img {
-  object-fit: cover;
-  height: 100%;
+/* Menu */
+.adventureMenu {
+  position: absolute;
+  z-index: 1;
   width: 100%;
 }
 
+/* Hero */
 .hero {
   position: relative;
-  min-height: calc(100vh - 80px)
-}
-
-@media (min-width: 640px) {
-  .hero .uk-h1 {
-    font-size: 6.625rem;
-  }
+  min-height: 100vh;
+  padding: 80px 0 0 0;
 }
 
 .hero video {
@@ -274,129 +246,28 @@ a.uk-link-muted:hover,
   top: 0;
   width: 100%;
   position: absolute;
-  opacity: 1;
+  opacity: .5;
   height: 100%;
 }
 
-.hero video.videoFixEdge {
-  width: auto !important;
+.amHero {
+  font-size: 7rem;
 }
 
-.hero h1 {
-  line-height: 6.25rem;
-}
-
-.socialMedia {
-  font-size: 1rem
-}
-
-.hoverBox {
-  color: #fff;
-  position: absolute;
-  left: 0;
-  padding: 30px 30px;
-  right: 0;
-}
-
-.caseCompany {
-  font-size: 1.6rem;
-  font-weight: 200;
-}
-
-.standards {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-
-.standards .divider {
-  border-left: 1px solid black;
-  margin-left: 25px;
-}
-
-.standards .item {
-  max-width: 300px;
-  padding-bottom: 30px;
-}
-
-.standards .item:nth-child(odd) {
-  margin-left: auto;
-  padding-right: 25px;
-  border-right: 1px solid black;
-  text-align: right;
-}
-
-.standards .item:nth-child(even) {
-  padding-left: 25px;
-}
-
-.standards .item:last-child {
-  padding-bottom: 0;
-}
-
-.subtitle {
-  font-size: 22px;
-}
-@media (max-width: 640px) {
-  .subtitle {
-    font-size: 1rem;
-  }
-}
-
-.loopImages,
-.edgeFix {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-@keyframes cf4FadeInOut {
-  0% {
-    opacity:1;
-  }
-  50% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-.loopImages img {
-  position: absolute;
-  animation-name: cf4FadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 6s;
-  animation-direction: alternate;
-}
-
-.loopImages img:nth-of-type(1) {
-  animation-delay: 0s;
-}
-
-.loopImages img:nth-of-type(2) {
-  animation-delay: 3s;
-}
-
-.caseHover {
-  background: rgb(255, 255, 255, 0.7);
-  backdrop-filter: saturate(250%) blur(10px);
-}
-
-.caseVideo {
-  height: 700px;
-}
-
-.omossImg {
-  width: auto;
+/* Other */
+.aboutImg {
+  object-fit: cover;
   height: 500px;
+  width: 100%;
+}
+.aboutImg.top {
+  object-position: top;
 }
 
-@media (min-width: 959px) {
-  .omossImg {
-    width: 500px;
-    height: 500px;
-  }
+.menuBtn {
+  color: #fff !important;
+  background: var(--main);
+  min-height: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
 }

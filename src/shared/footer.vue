@@ -1,7 +1,7 @@
 <template>
   <fragment>
     <section class="uk-section-default uk-section">
-      <div class="uk-container">
+      <div class="uk-container uk-container-large">
         <div
           class="uk-grid-margin uk-grid"
           uk-grid
@@ -9,8 +9,8 @@
           <div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-visible@m">
             <div class="uk-panel uk-width-1-1">
               <div class="uk-text-small">
-                <a href="tel:+46760946292">+46 760 94 62 92</a><br>
-                <a href="mailto:info@dreamdo.se">info@dreamdo.se</a>
+                <a href="tel:+19207073585">+1 920-707-3585</a><br>
+                <a href="mailto:info@adventure81marco.com">info@adventure81marco.com</a>
               </div>
             </div>
           </div>
@@ -24,19 +24,19 @@
                   <div class="uk-first-column">
                     <a
                       class="uk-icon"
-                      href="https://www.facebook.com/Dreamdo-106342074491642"
+                      href=""
                     ><i class="fab fa-facebook-f" /></a>
                   </div>
                   <div class="uk-first-column">
                     <a
                       class="uk-icon"
-                      href="https://linkedin.com/"
+                      href=""
                     ><i class="fab fa-linkedin-in" /></a>
                   </div>
                   <div>
                     <a
                       class="uk-icon"
-                      href="https://www.instagram.com/dreamdo.se/"
+                      href=""
                     ><i class="fab fa-instagram" /></a>
                   </div>
                 </div>
@@ -46,7 +46,7 @@
           <div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-visible@m">
             <div class="uk-panel uk-width-1-1">
               <div class="uk-text-right uk-text-small">
-                © 2020 Dreamdo
+                © 2020 Adventure 81 Marco
               </div>
             </div>
           </div>

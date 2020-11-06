@@ -13,7 +13,7 @@ import { mapActions } from "vuex";
 export default {
   data() {
     return {
-      sitekey: '6LflYvwUAAAAAKe4T8I0Eazg-6pf6L07lmBU41lx',
+      sitekey: 'XXXXXXXX',
       widgetId: 0
     }
   },

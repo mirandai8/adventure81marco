@@ -1,15 +1,15 @@
 // 1. Your custom variables and variable overwrites.
 :root {
-  --main: #07442d;
+  --main: #0c3c60;
   --muted: #f6fdfb;
 }
 
 $global-color: #000000; // Font
 $global-link-color: #000000;
-$global-primary-background: #5a5a5a;
-$global-secondary-background: #062918; // Section-Secondary
+$global-primary-background: #437daa;
+$global-secondary-background: #0c3c60; // Section-Secondary
 $global-muted-background: #f8f8f8; // Section-Muted
-$navbar-background: rgb(255, 255, 255); // Navbar
+// $navbar-background: rgb(255, 255, 255); // Navbar
 
 // 2. Import default variables and available mixins.
 @import "../../node_modules/uikit/src/scss/variables-theme.scss";
