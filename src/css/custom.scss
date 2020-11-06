@@ -20,7 +20,7 @@ html {
 
 @media (max-width: 640px) {
   .uk-h1 {
-    font-size: 4.625rem;
+    font-size: 3.625rem;
   }
   
   .uk-h2 {
@@ -95,19 +95,6 @@ a.uk-link-muted:hover,
 
 .uk-button-text::before {
   border-bottom: 2px solid var(--main) !important;
-}
-
-/* Sticky Navbar BG */
-.uk-navbar-container.uk-active {
-  background: rgba(240, 240, 247, 0.8);
-  backdrop-filter: saturate(250%) blur(10px);
-  -webkit-backdrop-filter: saturate(250%) blur(10px);
-}
-
-@media (max-width: 959px) {
-  .uk-navbar-container {
-    background: rgba(240, 240, 247) !important;
-  }
 }
 
 .uk-thumbnav img {
@@ -254,12 +241,19 @@ a.uk-link-muted:hover,
   font-size: 7rem;
 }
 
+@media (max-width: 640px) {
+  .amHero {
+    font-size: 5rem;
+  }
+}
+
 /* Other */
 .aboutImg {
   object-fit: cover;
   height: 500px;
   width: 100%;
 }
+
 .aboutImg.top {
   object-position: top;
 }
@@ -270,4 +264,11 @@ a.uk-link-muted:hover,
   min-height: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+}
+
+.menuPhone {
+  color: #fff !important;
+  background: var(--main);
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }

@@ -13,13 +13,13 @@
         <div class="uk-container uk-container-large">
           <div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-margin-xlarge-bottom">
             <div class="uk-panel uk-width-1-1">
-              <h2 class="uk-h3 uk-margin-remove-bottom">
+              <h2 class="uk-h3 uk-margin-remove-bottom uk-text-left@m uk-text-center">
                 Cruise Aboard
               </h2>
-              <h2 class="uk-h1 uk-margin-remove-vertical">
+              <h2 class="uk-h1 uk-margin-remove-vertical uk-text-left@m uk-text-center">
                 Your Own
               </h2>
-              <h2 class="uk-h1 amHero uk-margin-remove-top">
+              <h2 class="uk-h1 amHero uk-margin-remove-top uk-text-left@m uk-text-center">
                 Private Yacht
               </h2>
               <div class="uk-text-large uk-panel uk-margin uk-width-xlarge uk-margin-auto-right@m uk-margin-remove-left@m uk-margin-auto uk-text-left@m uk-text-center">
@@ -29,7 +29,8 @@
                 <a
                   class="uk-button uk-button-primary"
                   title="Explore"
-                  href=""
+                  uk-scroll
+                  href="#adventures"
                 >
                   Explore
                 </a>
@@ -40,7 +41,10 @@
       </div>
     </section>
 
-    <section class="uk-section-default uk-section-overlap uk-dark">
+    <section
+      id="adventures"
+      class="uk-section-default uk-section-overlap uk-dark"
+    >
       <div
         uk-img
         class="uk-section uk-section-large uk-flex uk-flex-middle"
@@ -138,7 +142,10 @@
       </div>
     </section>
 
-    <section class="uk-section-muted uk-section-overlap uk-dark">
+    <section
+      id="custom"
+      class="uk-section-muted uk-section-overlap uk-dark"
+    >
       <div
         class="uk-section uk-section-large uk-flex uk-flex-middle"
         uk-height-viewport="offset-bottom: 20"
@@ -230,7 +237,10 @@
       </div>
     </section>
 
-    <section class="uk-section-default uk-section-overlap uk-dark">
+    <section
+      id="weddings"
+      class="uk-section-default uk-section-overlap uk-dark"
+    >
       <div
         uk-img
         class="uk-background-norepeat uk-background-cover uk-background-bottom-center uk-section uk-section-large uk-flex uk-flex-middle"
@@ -309,6 +319,7 @@
     </section>
 
     <section
+      id="about"
       class="uk-section uk-section-large uk-section-default"
       uk-height-viewport="offset-bottom: 20"
     >
