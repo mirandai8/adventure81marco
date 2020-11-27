@@ -129,7 +129,7 @@
                   <a
                     class="menuBtn"
                     href="tel:+19207073585"
-                  >Call us</a>
+                  >+1 920-707-3585</a>
                 </li>
               </ul>
             </div>

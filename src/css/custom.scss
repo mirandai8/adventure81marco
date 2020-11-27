@@ -215,6 +215,10 @@ a.uk-link-muted:hover,
 }
 
 /* Menu */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  box-shadow: #000 0px -40px 50px;
+}
+
 .adventureMenu {
   position: absolute;
   z-index: 1;
@@ -228,7 +232,8 @@ a.uk-link-muted:hover,
   padding: 80px 0 0 0;
 }
 
-.hero video {
+.hero video,
+.hero img {
   object-fit: cover;
   top: 0;
   width: 100%;
@@ -264,6 +269,7 @@ a.uk-link-muted:hover,
   min-height: 50px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
+  font-size: 1.4em !important;
 }
 
 .menuPhone {
@@ -271,4 +277,18 @@ a.uk-link-muted:hover,
   background: var(--main);
   padding-left: 30px !important;
   padding-right: 30px !important;
+}
+
+.uk-slideshow .uk-slidenav-next {
+  background-color: #0c3c60;
+  border-radius: 50px;
+  padding: 13px 16px 13px 20px;
+  right: -40px;
+}
+
+.uk-slideshow .uk-slidenav-previous {
+  background-color: #0c3c60;
+  border-radius: 50px;
+  padding: 13px 20px 13px 16px;
+  left: -40px;
 }

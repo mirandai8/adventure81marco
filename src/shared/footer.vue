@@ -24,19 +24,25 @@
                   <div class="uk-first-column">
                     <a
                       class="uk-icon"
+                      target="_blank"
+                      rel="nofollow noopener"
                       href=""
                     ><i class="fab fa-facebook-f" /></a>
                   </div>
                   <div class="uk-first-column">
                     <a
                       class="uk-icon"
+                      target="_blank"
+                      rel="nofollow noopener"
                       href=""
                     ><i class="fab fa-linkedin-in" /></a>
                   </div>
                   <div>
                     <a
                       class="uk-icon"
-                      href=""
+                      target="_blank"
+                      rel="nofollow noopener"
+                      href="https://www.instagram.com/adventure81marco/"
                     ><i class="fab fa-instagram" /></a>
                   </div>
                 </div>

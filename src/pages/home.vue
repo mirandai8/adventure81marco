@@ -2,13 +2,17 @@
   <fragment>
 
     <section class="uk-section-secondary uk-section uk-flex uk-flex-middle hero uk-light">
-      <video
+      <!-- <video
         src="../assets/adventure81web.mp4"
         loop
         muted
         playsinline
         uk-video="autoplay: inview"
-      ></video>
+      ></video> -->
+      <img
+        src="../assets/hero.jpg"
+        uk-img
+      />
       <div class="uk-width-1-1">
         <div class="uk-container uk-container-large">
           <div class="uk-grid-item-match uk-flex-middle uk-width-expand@m uk-margin-xlarge-bottom">
@@ -27,7 +31,7 @@
               </div>
               <div class="uk-margin-large uk-text-left@m uk-text-center">
                 <a
-                  class="uk-button uk-button-primary"
+                  class="uk-button uk-button-primary uk-button-large"
                   title="Explore"
                   uk-scroll
                   href="#adventures"
@@ -62,12 +66,14 @@
                 </h3>
                 <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Daytime or sunset cruise at your fingertips</div>
                 <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">Standard three hour daytime or sunset cruise at your fingertips all it is a call or text away. A minimum of 4 guests and a maximum of 6 is required. $100 per guest.
-                  Cruises include snacks and appetizers as well as white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest.
+                  Cruises include snacks and appetizers as well as champagne, mimosas, white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest.
                 </div>
                 <div class="uk-text-left@m uk-text-center">
                   <a
                     class="uk-button uk-button-secondary uk-button-large"
-                    href=""
+                    uk-scroll
+                    href="#contact"
+                    @click="interestedIn('3hr')"
                   >
                     Book now
                   </a>
@@ -118,6 +124,33 @@
                           src="../assets/images/3hr-4.jpg"
                         >
                       </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/3hr-5.jpg"
+                        >
+                      </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/3hr-6.jpg"
+                        >
+                      </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/3hr-7.jpg"
+                        >
+                      </li>
                     </ul>
                     <div class="uk-visible@s uk-light">
                       <a
@@ -165,13 +198,15 @@
                   Special events like birthdays, anniversaries, engagements and weddings aboard Adventure 81 are our specialty!
                   Sit back, relax and let us take the wheel.
                   Allow us to customize a memorable experience along the gorgeous coastline of Marco Island and Naples with customized catering and decor officiated by a licensed Master Captain.
-                  Please allow two weeks for bookings.
+                  Please allow advanced notice for bookings for your special event.
                 </div>
                 <div class="uk-text-left@m uk-text-center">
 
                   <a
                     class="uk-button uk-button-secondary uk-button-large"
-                    href=""
+                    uk-scroll
+                    href="#contact"
+                    @click="interestedIn('custom')"
                   >
                     Book now
                   </a>
@@ -263,7 +298,9 @@
                 <div class="uk-text-left@m uk-text-center">
                   <a
                     class="uk-button uk-button-secondary uk-button-large"
-                    href=""
+                    uk-scroll
+                    href="#contact"
+                    @click="interestedIn('wedding')"
                   >
                     Book now
                   </a>
@@ -429,6 +466,71 @@
       </div>
     </section>
 
+    <section class="uk-section uk-section-large">
+      <div class="uk-container uk-container-large">
+        <h3 class="uk-h3 uk-margin-large uk-text-left@m uk-text-center">
+          Latest Instagram
+        </h3>
+        <div
+          class="uk-grid-small uk-flex-middle"
+          uk-grid
+        >
+          <div class="uk-width-auto">
+            <img
+              class="uk-border-circle"
+              width="100"
+              height="100"
+              :src="instagram[0].profilePic"
+            />
+          </div>
+          <div class="uk-width-expand">
+            <h3 class="uk-card-title uk-margin-remove-bottom">{{ instagram[0].insta }}</h3>
+            <a
+              class="uk-button uk-button-secondary uk-button-small"
+              target="_blank"
+              rel="nofollow noopener"
+              :href="`https://www.instagram.com/${instagram[0].insta}/`"
+            >
+              Follow
+            </a>
+          </div>
+        </div>
+        <div
+          class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center uk-grid-medium"
+          uk-lightbox="animation: slide"
+          uk-grid
+        >
+
+          <div
+            v-for="i in instagram[0].images"
+            :key="i.node.id"
+          >
+            <a
+              :href="i.node.display_url"
+              class="uk-inline-clip uk-transition-toggle"
+              tabindex="0"
+              :data-caption="i.node.edge_media_to_caption.edges[0].node.text"
+            >
+              <img
+                :src="i.node.thumbnail_src"
+                class="uk-transition-scale-up uk-transition-opaque"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="uk-margin-top uk-text-left@m uk-text-center">
+          <a
+            class="uk-button uk-button-secondary uk-button-large"
+            target="_blank"
+            rel="nofollow noopener"
+            :href="`https://www.instagram.com/${instagram[0].insta}/`"
+          >
+            Follow us on Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section
       id="contact"
       class="uk-section-muted uk-section uk-section-large"
@@ -503,7 +605,7 @@
                 <!-- <Recaptcha /> -->
                 <button
                   type="submit"
-                  class="uk-margin-top uk-button uk-button-primary"
+                  class="uk-margin-top uk-button uk-button-secondary"
                 >Send</button>
               </form>
               <p
@@ -526,10 +628,6 @@ import marcoislandBG from "../assets/marcoisland-dock-bg.jpg"
 
 export default {
   name: "Home",
-  components: {
-  },
-  computed: {
-  },
   data: () => ({
     marcoislandBG: marcoislandBG,
     nameMsg: '',
@@ -537,8 +635,29 @@ export default {
     messageMsg: '',
     loadingTxt: false,
     errorTxt: "",
+    instagram: [ {
+      id: "adventure81marco",
+      insta: "adventure81marco",
+      fullName: "Adventure 81",
+      profilePic: null,
+      images: null,
+    } ]
   }),
+  mounted() {
+    this.loadPic(this.instagram[ 0 ].insta)
+  },
   methods: {
+    interestedIn(input) {
+      if (input === "3hr") {
+        this.messageMsg = "I'm interested in a 3 hour tour"
+      }
+      if (input === "custom") {
+        this.messageMsg = "I'm interested in a custom tour"
+      }
+      if (input === "wedding") {
+        this.messageMsg = "I'm interested in a wedding package"
+      }
+    },
     sendEmail() {
       if (!this.nameMsg) {
         return this.errorTxt = "Please type your name"
@@ -576,6 +695,14 @@ export default {
     checkMoz() {
       if (window.navigator.userAgent.indexOf("Firefox") > 0) return 1
       return 0
+    },
+    loadPic: async function (username) {
+      var pic = await this.fetchUsername(username);
+      this.instagram.filter(o => o.insta === username).forEach(o => o.profilePic = pic.graphql.user.profile_pic_url_hd);
+      this.instagram.filter(o => o.insta === username).forEach(o => o.images = pic.graphql.user.edge_owner_to_timeline_media.edges);
+    },
+    fetchUsername: async function (username) {
+      return await fetch(`https://www.instagram.com/${username}/?__a=1`).then(r => r.json());
     },
   }
 }
