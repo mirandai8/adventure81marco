@@ -65,8 +65,8 @@
                   3 HR Charter
                 </h3>
                 <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Daytime or sunset cruise at your fingertips</div>
-                <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">Standard three hour daytime or sunset cruise at your fingertips all it is a call or text away. A minimum of 4 guests and a maximum of 6 is required. $100 per guest.
-                  Cruises include snacks and appetizers as well as champagne, mimosas, white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest.
+                <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">Standard three hour daytime or sunset cruise at your fingertips all it is a call or text away. A minimum of 4 guests and a maximum of 6 is required, $100 per guest.
+                  Cruise includes snacks and appetizers as well as champagne, mimosas, white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest. Additional hours are avaliable upon request. 
                 </div>
                 <div class="uk-text-left@m uk-text-center">
                   <a
@@ -193,11 +193,11 @@
                 <h3 class="uk-h1 uk-margin-small uk-text-left@m uk-text-center">
                   Custom Tour
                 </h3>
-                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Customize a memorable experience</div>
+                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Customize A Memorable Experience</div>
                 <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">
-                  Special events like birthdays, anniversaries, engagements and weddings aboard Adventure 81 are our specialty!
-                  Sit back, relax and let us take the wheel.
-                  Allow us to customize a memorable experience along the gorgeous coastline of Marco Island and Naples with customized catering and decor officiated by a licensed Master Captain.
+                  Special events like birthdays, anniversaries, engagements, weddings, valentines and celebrations of life abouard Adventure81 are our specialty!
+                  Allow us to customize a memorable experience along the gorgeous  waters of Naples Bay Resort, Port Royal, Dome Homes and 
+                  all coastline of Marco Island and Naples with customized catering and decor officiated by a licensed Master Captain.
                   Please allow advanced notice for bookings for your special event.
                 </div>
                 <div class="uk-text-left@m uk-text-center">
@@ -292,8 +292,11 @@
                 <h3 class="uk-h1 uk-margin-small uk-text-left@m uk-text-center">
                   Weddings
                 </h3>
-                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Looking for a private intimate wedding?</div>
-                <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">We offer wedding packages with personal chef on board.
+                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Looking For A Private Intimate Wedding?</div>
+                <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center"> You are engaget! Let us start by congratulating you. We would be honored to be part of your most memorable special day of your life. 
+                Wether if your looking for a bachelor, bachelorette, elopement or intimate wedding we will take the stress away from you. 
+                All you have to do is is sit back and relax while our captain and team do the rest. 
+                Our Caotain is wedding officiant and notary, he will be able to announce you as husband and wife aboard or on private beach. 
                 </div>
                 <div class="uk-text-left@m uk-text-center">
                   <a
@@ -401,7 +404,7 @@
             <div class="uk-panel uk-width-1-1">
               <h3 class="uk-h4 uk-text-center uk-margin-remove-bottom">On the beautiful waters of Marco Island</h3>
               <hr class="uk-divider-small uk-text-center">
-              <div class="uk-panel uk-margin uk-width-medium uk-margin-auto uk-text-center">Let us take you on a day time or dinner sunset cruise on the beautiful waters of Marco Island,
+              <div class="uk-panel uk-margin uk-width-medium uk-margin-auto uk-text-center">Let us take you on a day time or dinner sunset cruise on the beautiful waters of Naples Bay, Port Royal, Dome Homes and all of Marco Island,
                 Naples, Isles of Capri and 10,000 Islands along the Golf of Mexico coast line with daily excursions on our 40' yacht.
               </div>
             </div>
