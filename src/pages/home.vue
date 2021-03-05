@@ -62,11 +62,12 @@
             <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
               <div class="uk-panel uk-width-1-1">
                 <h3 class="uk-h1 uk-margin-small uk-text-left@m uk-text-center">
+                  Standard 
                   3 HR Charter
                 </h3>
-                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Daytime or sunset cruise at your fingertips</div>
+                <div class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center">Daytime Or Sunset Cruise At Your Fingertips</div>
                 <div class="uk-panel uk-margin-medium uk-text-left@m uk-text-center">Standard three hour daytime or sunset cruise at your fingertips all it is a call or text away. A minimum of 4 guests and a maximum of 6 is required. $100 per guest.
-                  Cruises include snacks and appetizers as well as champagne, mimosas, white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest.
+                  Cruise include snacks and appetizers as well as champagne, mimosas, white wine, beer and soft drinks. Just bring sunblock, we'll take care of the rest.
                 </div>
                 <div class="uk-text-left@m uk-text-center">
                   <a
