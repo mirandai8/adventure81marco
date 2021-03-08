@@ -1,6 +1,5 @@
 <template>
   <fragment>
-
     <!-- MOBILE -->
     <div
       uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light adventureMenu; top: 50vh"
@@ -14,45 +13,25 @@
           <div class="uk-navbar-left">
             <ul class="uk-navbar-nav">
               <li>
-                <a
-                  class="uk-navbar-toggle"
-                  href="#sv-mobile"
-                  uk-toggle
-                >
+                <a class="uk-navbar-toggle" href="#sv-mobile" uk-toggle>
                   <div
                     uk-navbar-toggle-icon
                     class="uk-icon uk-navbar-toggle-icon"
-                  >
-                  </div>
+                  ></div>
                 </a>
-                <div
-                  ref="dropDownMenu"
-                  class="uk-navbar-dropdown uk-width"
-                >
+                <div ref="dropDownMenu" class="uk-navbar-dropdown uk-width">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
                     <li @click="hideMenu">
-                      <a
-                        uk-scroll
-                        href="#"
-                      >Home</a>
+                      <a uk-scroll href="#">Home</a>
                     </li>
                     <li @click="hideMenu">
-                      <a
-                        uk-scroll
-                        href="#adventures"
-                      >Adventures</a>
+                      <a uk-scroll href="#adventures">Adventures</a>
                     </li>
                     <li @click="hideMenu">
-                      <a
-                        uk-scroll
-                        href="#about"
-                      >About</a>
+                      <a uk-scroll href="#about">About</a>
                     </li>
                     <li @click="hideMenu">
-                      <a
-                        uk-scroll
-                        href="#contact"
-                      >Contact us</a>
+                      <a uk-scroll href="#contact">Contact us</a>
                     </li>
                   </ul>
                 </div>
@@ -60,14 +39,8 @@
             </ul>
           </div>
           <div class="uk-navbar-center">
-            <router-link
-              to="/"
-              class="uk-navbar-item uk-logo"
-            >
-              <img
-                height="50"
-                alt="Adventure 81"
-              />
+            <router-link to="/" class="uk-navbar-item uk-logo">
+              <img height="50" alt="Adventure 81" />
             </router-link>
           </div>
           <div class="uk-navbar-right menuPhone">
@@ -87,49 +60,26 @@
           <div uk-navbar>
             <div class="uk-navbar-left">
               <ul class="uk-navbar-nav">
-                <li><a
-                    uk-scroll
-                    href="#"
-                  >Home</a></li>
+                <li><a uk-scroll href="#">Home</a></li>
                 <li>
-                  <a
-                    uk-scroll
-                    href="#adventures"
-                  >Adventures</a>
+                  <a uk-scroll href="#adventures">Adventures</a>
                   <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                      <li><a
-                          uk-scroll
-                          href="#adventures"
-                        >3 HR Charter</a></li>
-                      <li><a
-                          uk-scroll
-                          href="#custom"
-                        >Custom Tour</a></li>
-                      <li><a
-                          uk-scroll
-                          href="#weddings"
-                        >Weddings</a></li>
+                      <li><a uk-scroll href="#adventures">3 HR Charter</a></li>
+                      <li><a uk-scroll href="#custom">Custom Tour</a></li>
+                      <li><a uk-scroll href="#weddings">Weddings</a></li>
+                      <li><a uk-scroll href="#private">Private Dinner</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><a
-                    uk-scroll
-                    href="#about"
-                  >About</a></li>
-                <li><a
-                    uk-scroll
-                    href="#contact"
-                  >Contact us</a></li>
+                <li><a uk-scroll href="#about">About</a></li>
+                <li><a uk-scroll href="#contact">Contact us</a></li>
               </ul>
             </div>
             <div class="uk-navbar-right">
               <ul class="uk-navbar-nav">
                 <li>
-                  <a
-                    class="menuBtn"
-                    href="tel:+19207073585"
-                  >+1 920-707-3585</a>
+                  <a class="menuBtn" href="tel:+19207073585">+1 920-707-3585</a>
                 </li>
               </ul>
             </div>
@@ -137,20 +87,16 @@
         </div>
       </nav>
     </div>
-
   </fragment>
 </template>
 
 <script>
 export default {
   name: "Menu",
-  data: () => ({
-  }),
-  computed: {
-  },
-  components: {
-  },
-  mounted() { },
+  data: () => ({}),
+  computed: {},
+  components: {},
+  mounted() {},
   methods: {
     hideMenu() {
       const element = this.$refs.dropDownMenu;
@@ -158,5 +104,5 @@ export default {
       UIkit.drop(element).hide();
     },
   },
-}
+};
 </script>
