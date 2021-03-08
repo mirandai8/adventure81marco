@@ -67,6 +67,7 @@
             <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
               <div class="uk-panel uk-width-1-1">
                 <h3 class="uk-h1 uk-margin-small uk-text-left@m uk-text-center">
+                  Standard
                   3 HR Charter
                 </h3>
                 <div
@@ -215,7 +216,7 @@
                   class="uk-panel uk-margin-medium uk-text-left@m uk-text-center"
                 >
                   Special events like birthdays, anniversaries, engagements,
-                  weddings, valentines and celebrations of life abouard
+                  weddings, valentines and celebrations of life aboard
                   Adventure81 are our specialty! Allow us to customize a
                   memorable experience along the gorgeous waters of Naples Bay
                   Resort, Port Royal, Dome Homes and all coastline of Marco
