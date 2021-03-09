@@ -270,6 +270,15 @@
                           src="../assets/images/custom-3.jpg"
                         />
                       </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/custom-4.jpg"
+                        />
+                      </li>
                     </ul>
                     <div class="uk-visible@s uk-light">
                       <a
@@ -366,6 +375,24 @@
                           src="../assets/images/wedding-2.jpg"
                         />
                       </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/wedding-3.jpg"
+                        />
+                      </li>
+                      <li tabindex="-1">
+                        <img
+                          class="uk-cover"
+                          alt=""
+                          uk-img="target: !.uk-slideshow-items"
+                          uk-cover
+                          src="../assets/images/wedding-4.jpg"
+                        />
+                      </li>
                     </ul>
                     <div class="uk-visible@s uk-light">
                       <a
@@ -443,7 +470,7 @@
                           alt=""
                           uk-img="target: !.uk-slideshow-items"
                           uk-cover
-                          src="../assets/images/custom-1.jpg"
+                          src="../assets/images/private-1.jpg"
                         />
                       </li>
                       <li tabindex="-1">
@@ -452,7 +479,7 @@
                           alt=""
                           uk-img="target: !.uk-slideshow-items"
                           uk-cover
-                          src="../assets/images/custom-2.jpg"
+                          src="../assets/images/3hr-2.jpg"
                         />
                       </li>
                       <li tabindex="-1">
@@ -461,7 +488,7 @@
                           alt=""
                           uk-img="target: !.uk-slideshow-items"
                           uk-cover
-                          src="../assets/images/custom-3.jpg"
+                          src="../assets/images/3hr-7.jpg"
                         />
                       </li>
                     </ul>
