@@ -67,7 +67,7 @@
             <div class="uk-grid-item-match uk-flex-middle uk-width-1-2@m">
               <div class="uk-panel uk-width-1-1">
                 <h3 class="uk-h1 uk-margin-small uk-text-left@m uk-text-center">
-                  3 HR Charter
+                  Standard 3 HR Charter
                 </h3>
                 <div
                   class="uk-panel uk-text-large uk-text-primary uk-margin-small uk-text-left@m uk-text-center"
@@ -596,7 +596,7 @@
                 class="uk-panel uk-margin uk-width-medium uk-margin-auto uk-text-center"
               >
                 Positive, soft spoken and funny. Josh is originally from
-                Minocqua Wisconsin. He moved to Florida to pursue his dreams of
+                Minocqua, Wisconsin. He moved to Florida to pursue his dreams of
                 living and working on the water. Josh then became a Licensed
                 Master Captain and PADI Dive instructor. With careful
                 consideration he bought the 40' yacht to offer dream vacations
@@ -633,10 +633,7 @@
               <div
                 class="uk-panel uk-margin uk-width-medium uk-margin-auto uk-text-center"
               >
-                We offer standard and custom charters, with industries most
-                competitive pricing cruise which means everyone can experience
-                luxury vacations.
-              </div>
+              
             </div>
           </div>
         </div>
