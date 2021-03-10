@@ -887,8 +887,9 @@ export default {
         );
     },
     fetchUsername: async function(username) {
+      const proxyUrl = "https://cors-anywhere.herokuapp.com/"
       return await fetch(
-        `https://www.instagram.com/${username}/?__a=1`
+        `${proxyUrl}https://www.instagram.com/${username}/?__a=1`
       ).then((r) => r.json());
     },
   },
